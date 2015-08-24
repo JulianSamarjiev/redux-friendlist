@@ -7,7 +7,7 @@ if (__DEV__) {
   createStore = compose(
     require('redux-devtools').devTools(),
     require('redux-devtools').persistState(
-      window.location.href.match(/[?&]debug_session=([^&]+)|\b/)
+      window.location.href.match(/[?&]debug_session=([^&]+)\b/)
     ),
     createStore
   );
