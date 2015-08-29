@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import styles from './FriendListApp.css';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as FriendsActions from '../actions/FriendsActions';
@@ -21,8 +22,8 @@ export default class FriendListApp extends Component {
     return (
       <div className={styles.friendListApp}>
         <h1>The FriendList</h1>
-        AddFriendInput component
-        FriendList component
+        <AddFriendInput addFriend={actions.addFriend} />
+        <FriendList friends={friendsById} actions={actions} />
       </div>
     );
   }
