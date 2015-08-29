@@ -3,7 +3,7 @@ import styles from './FriendListApp.css';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as FriendsActions from '../actions/FriendsActions';
-import { FriendList, AddFriendInput } from '../components';
+import { AddFriendInput, FriendList } from '../components';
 
 @connect(state => ({
   friendlist: state.friendlist
