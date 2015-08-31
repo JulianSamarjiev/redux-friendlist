@@ -1,6 +1,6 @@
 import * as types from '../constants/ActionTypes';
 import omit from 'lodash/object/omit';
-import assing from 'lodash/object/assing';
+import assign from 'lodash/object/assign';
 import mapValues from 'lodash/object/mapValues';
 
 const initialState = {
